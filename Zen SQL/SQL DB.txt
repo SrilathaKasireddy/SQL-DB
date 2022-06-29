@@ -1,0 +1,72 @@
+-- create Zen class Students Collection Batch Collection Task Collection Mentor Collection
+CREATE TABLE Students (
+  id INTEGER PRIMARY KEY,
+ StudentName TEXT ,
+  Batch TEXT ,
+BatchLanguage TEXT 
+);
+
+
+INSERT INTO Students VALUES (1, 'Aruna','35 WD',"English");
+INSERT INTO Students  VALUES (2, 'Barun', '35 WD',"English");
+INSERT INTO Students  VALUES (3, 'Arav', '35 WD',"English");
+
+
+
+SELECT * FROM Students  WHERE Batch = '35 WD';
+
+
+CREATE TABLE Mentors (
+  id INTEGER PRIMARY KEY,
+ MentorName TEXT ,
+  Batch TEXT ,
+BatchLanguage TEXT ,
+  Qualification TEXT
+  
+);
+INSERT INTO Mentors VALUES (1, 'Ajay','35 WD',"English","M.tech");
+INSERT INTO Mentors VALUES (2, 'Vijay', '35 WD',"English","M.tech");
+INSERT INTO Mentors VALUES (3, 'Srujay', '35 WD',"English","M.tech");
+
+
+SELECT * FROM Mentors  WHERE Batch = '35 WD';
+
+
+CREATE TABLE Tasks (
+  id INTEGER PRIMARY KEY,
+ TopicName TEXT ,
+  TotalTasks INTEGER 
+
+);
+
+
+INSERT INTO Tasks VALUES (1, 'Reactjs",6);
+INSERT INTO Tasks  VALUES (2, 'Html', 10);
+INSERT INTO Tasks  VALUES (3, 'JavaScript', 10);
+
+
+
+SELECT * FROM Tasks  WHERE Batch = '35 WD';
+
+
+
+CREATE TABLE Batch (
+  id INTEGER PRIMARY KEY,
+ BatchName TEXT ,
+  NoOfStudents  INTEGER 
+
+);
+
+
+INSERT INTO Batch  VALUES (1,"35WD",30);
+INSERT INTO Batch  VALUES (2," 34WD", 35);
+INSERT INTO Batch  VALUES (3,"33WD" ,40);
+INSERT INTO Batch  VALUES (4,"32WD" ,20);
+INSERT INTO Batch  VALUES (5,"31WD" ,32);
+INSERT INTO Batch  VALUES (6,"30WD" ,29);
+
+
+
+
+
+SELECT * FROM Batch  ;
