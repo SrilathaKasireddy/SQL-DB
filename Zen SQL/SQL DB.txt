@@ -1,4 +1,4 @@
--- create Zen class Students Collection Batch Collection Task Collection Mentor Collection
+
 CREATE TABLE Students (
   id INTEGER PRIMARY KEY,
  StudentName TEXT ,
